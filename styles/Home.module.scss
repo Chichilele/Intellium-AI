@@ -1,0 +1,25 @@
+@import 'variables';
+
+.hero {
+  @include innerBox(2);
+  background: white;
+  border-radius: 0 0 200px 200px;
+}
+
+.heroLeft {
+  grid-column: 2 / 6;
+}
+
+.heroRight {
+  grid-column: 7 / -2;
+}
+
+.wwd {
+  @include innerBox(3);
+
+  * {
+    justify-self: center;
+    grid-column: 4 / -4;
+    color: white;
+  }
+}

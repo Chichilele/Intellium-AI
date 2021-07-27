@@ -1,0 +1,38 @@
+$black: #000719;
+$brandBlue: #0048FF;
+$BS10: #195AFF;
+$BS20: #336DFF;
+$BS30: #4D7FFF;
+$BS40: #6691FF;
+$BS50: #80A4FF;
+$BS60: #99B6FF;
+$BS70: #B3C8FF;
+$BS80: #CCDAFF;
+$BS90: #E6EDFF;
+$BT10: #0041E6;
+$BT20: #003ACC;
+$BT30: #0032B3;
+$BT40: #002B99;
+$BT50: #002480;
+$BT60: #001D66;
+$BT70: #00164D;
+$BT80: #000E33;
+$BT90: #000719;
+$BW32: #525663;
+$BW48: #7A7E87;
+$BW64: #A3A6AC;
+$BW72: #B8BABF;
+$BW80: #CCCDD1;
+$BW88: #E0E1E3;
+$BW96: #F5F5F6;
+
+$innerGrid: repeat(12, minmax(10px, 104px));
+$containerGrid: minmax(10px, 1fr) $innerGrid minmax(10px, 1fr);
+
+@mixin innerBox($row) {
+  grid-column: 1 / -1;
+  grid-row: $row;
+  display: grid;
+  grid-template-columns: $containerGrid;
+}
+// make @mixin for $innerGrid
