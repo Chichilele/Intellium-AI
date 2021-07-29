@@ -26,7 +26,7 @@ $BW80: #CCCDD1;
 $BW88: #E0E1E3;
 $BW96: #F5F5F6;
 
-$innerGrid: repeat(12, minmax(10px, 104px));
+$innerGrid: repeat(12, minmax(10px, 72px));
 $containerGrid: minmax(10px, 1fr) $innerGrid minmax(10px, 1fr);
 
 @mixin innerBox($row) {
@@ -34,5 +34,5 @@ $containerGrid: minmax(10px, 1fr) $innerGrid minmax(10px, 1fr);
   grid-row: $row;
   display: grid;
   grid-template-columns: $containerGrid;
+  grid-gap: 32px;
 }
-// make @mixin for $innerGrid

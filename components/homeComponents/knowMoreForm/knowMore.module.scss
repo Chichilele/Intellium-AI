@@ -1,0 +1,15 @@
+@import '../../../styles/variables';
+
+
+.container {
+  @include innerBox(auto);
+  background: $BT80;
+  h1, p {
+    color: white;
+    grid-column: 2 / 6;
+  }
+
+  form {
+    grid-column: 8 / -2;
+  }
+}

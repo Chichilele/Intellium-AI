@@ -1,0 +1,14 @@
+@import '../../../styles/variables';
+
+.testimonials {
+  @include innerBox(4);
+  background: white;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 200px 200px 0 0;
+
+  h2, h3, p {
+    grid-column: 3 / 13;
+  }
+}

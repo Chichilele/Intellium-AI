@@ -1,0 +1,11 @@
+@import '../../../styles/variables';
+
+.latestCS {
+   @include innerBox(5);
+   background: white;
+
+   h2, p {
+     grid-column: 3 / -3;
+     text-align: center;
+   }
+}

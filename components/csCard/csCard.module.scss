@@ -1,0 +1,27 @@
+@import '../../styles/variables';
+
+.csCard {
+  height: 504px;
+  background: $BS90;
+  border-radius: 4%;
+  padding: 48px 32px;
+
+
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  grid-gap: 30px;
+
+  h3 {
+    grid-row: 2;
+  }
+  p {
+    text-align: left;
+    grid-row: 3;
+  }
+
+  .link {
+    grid-row: 4;
+  }
+}

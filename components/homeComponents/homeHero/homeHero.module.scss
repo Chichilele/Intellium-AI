@@ -1,0 +1,21 @@
+@import '../../../styles/variables';
+
+
+.hero {
+  @include innerBox(2);
+  background: white;
+  border-radius: 0 0 200px 200px;
+}
+
+.heroLeft {
+  grid-column: 2 / 6;
+}
+
+.heroRight {
+  grid-column: 7 / -2;
+
+  div {
+    border-radius: 64px 64px 200px 0;
+
+  }
+}

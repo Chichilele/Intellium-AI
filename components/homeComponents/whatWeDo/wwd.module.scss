@@ -1,0 +1,17 @@
+@import '../../../styles/variables';
+
+.wwd {
+  @include innerBox(3);
+}
+
+.wwdIntro {
+  justify-self: center;
+  text-align: center;
+  grid-column: 4 / -4;
+  color: white;
+}
+
+.aiBoost {
+  grid-column: 2 /-2;
+  width: 100%;
+}

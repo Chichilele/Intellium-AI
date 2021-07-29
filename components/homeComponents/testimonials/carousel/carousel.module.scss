@@ -1,0 +1,32 @@
+.carousel {
+  grid-column: 2 / -2;
+  display: grid;
+  grid-template-columns: 20px repeat(3, 1fr) 20px;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 32px;
+  padding: 32px;
+
+  .carouselBox {
+    border: solid gray 1px;
+    height: 160px;
+    width: 360px;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: position 2s;
+}
+  .logo {
+
+  }
+
+}
+
+.sides {
+  opacity: 0.2;
+}
+
+.center {
+  opacity: 1;
+}

@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '../header'
 import Footer from '../footer'
+import KnowMore from '../homeComponents/knowMoreForm'
 
 // styles
 import styles from '../../styles/Layout.module.scss'
@@ -26,6 +27,7 @@ export default function Layout({ children, home }) {
         <Header />
         {children}
       </div>
+      <KnowMore />
       {/* <Footer /> */}
     </div>
   )
