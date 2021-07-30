@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Header from '../header'
 import Footer from '../footer'
-import KnowMore from '../homeComponents/knowMoreForm'
 
 // styles
 import styles from '../../styles/Layout.module.scss'
@@ -9,7 +8,7 @@ import styles from '../../styles/Layout.module.scss'
 const name = 'Intellium AI'
 export const siteTitle = 'Intellium AI'
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home, dark }) {
 
   return (
     <div>
@@ -23,12 +22,20 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
       </Head>
 
-      <div className={styles.container}>
-        <Header />
-        {children}
+      <div className={dark ? styles.whiteContainer : styles.container}>
+        <Header dark={dark} />
+        {children ? children : <div style={{
+          padding: "200px",
+          height: "600px",
+          background: "white",
+          gridRow: "2",
+          gridColumn: "1 / -1",
+          textAlign: "center"
+        }}>
+          <h1 className="bigH1">Under Contruction...</h1>
+        </div>}
       </div>
-      <KnowMore />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }

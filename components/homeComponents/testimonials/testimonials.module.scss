@@ -1,6 +1,7 @@
 @import '../../../styles/variables';
 
 .testimonials {
+  padding-top: 165px;
   @include innerBox(4);
   background: white;
   justify-items: center;
@@ -8,7 +9,11 @@
   text-align: center;
   border-radius: 200px 200px 0 0;
 
-  h2, h3, p {
+  h2, p {
     grid-column: 3 / 13;
+  }
+
+  h3 {
+    grid-column: 5 / -5;
   }
 }

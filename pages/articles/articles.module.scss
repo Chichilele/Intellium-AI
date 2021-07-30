@@ -1,0 +1,49 @@
+@import '../../styles/variables';
+
+.header {
+  background: url('/articlesHero.jpg');
+  height: 520px;
+  border-radius: 0 0 200px 200px;
+  @include innerBox(2);
+
+  color: white;
+  h1, p, button {
+    grid-column: 2 / 7;
+  }
+
+  button {
+    margin: 20px;
+  }
+}
+
+.articles {
+  padding: 150px 0;
+  background: white;
+  grid-column: 2 / -2;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 320px));
+  grid-gap: 32px;
+  justify-content: space-evenly;
+}
+
+.article {
+  background: white;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 320px));
+  grid-auto-rows: auto;
+  justify-content: space-evenly;
+  padding: 100px 0;
+
+
+    @include innerBox(3);
+    background: white;
+
+    * {
+      grid-column: 4 / -4;
+    }
+
+    .headerWhite {
+    }
+
+}

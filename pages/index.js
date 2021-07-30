@@ -7,10 +7,13 @@ import WhatWeDo from '../components/homeComponents/whatWeDo'
 import Testimonials from '../components/homeComponents/testimonials'
 import LatestCS from '../components/homeComponents/latestCS'
 
+import { fetchAPI } from './api/api'
+
 // styles
 import styles from '../styles/Home.module.scss'
 
-export default function Home() {
+export default function Home({articles}) {
+
   return (<div className={styles.container}>
     <Head>
       <title>Intellium AI</title>
@@ -23,7 +26,20 @@ export default function Home() {
       <Hero />
       <WhatWeDo />
       <Testimonials />
-      <LatestCS />
+      <LatestCS articles={articles}/>
     </Layout>
   </div>)
+}
+
+
+export async function getStaticProps() {
+
+  const [articles] = await Promise.all([
+    fetchAPI("/articles")
+  ])
+
+  return {
+    props: { articles },
+    revalidate: 1,
+  }
 }

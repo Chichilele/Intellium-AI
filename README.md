@@ -1,12 +1,18 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Planning:
+
+This is what I managed to do of the website, mainly the home page and the articles page. I prioritised some specific functional aspects like the carousel and the articles page with data from an API.
+
+The website is not responsive because the design doesn't include a mobile version and everything is in pixels, but it can easily redesign as based on a 12 columns grid.
+
+
+## Plan:
 
 Red Hat Display
 
 **Typographies:**
 
-Font:
+Font: 'Red Hat Display'
 
 - H1: 60px
 - H1.2: 64px
@@ -26,37 +32,4 @@ Components:
     - Footer
 - Blue Button
 - Case Study Card
-- Want to know more form
-
-**Page 1:**
-
-Landing Hero:
-
-- Left:
-    - H1
-    - smallt
-    - p
-    - button
-- Right:
-    - Image
-
-What we do:
-
-- h2
-- h4
-- smallt
-- video/img
-- AiBoost Box (grid 3 collumns)
-
-Testimonials:
-
-- H2
-- H3
-- P
-- Carousel
-
-Latest Case Studies:
-
-- Three case studies cards
-
-Want to know more form
+- Want to know more form.

@@ -1,9 +1,18 @@
 @import 'variables';
 
-.container {
+@mixin container {
   overflow: hidden;
   width: 100vw;
   display: grid;
   grid-template-columns: minmax(10px, 1fr) repeat(12, minmax(10px, 104px)) minmax(10px, 1fr);
   background: $BT80;
+}
+
+.container {
+  @include container;
+}
+
+.whiteContainer {
+  @include container;
+  background: white;
 }

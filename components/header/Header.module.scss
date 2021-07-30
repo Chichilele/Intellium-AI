@@ -1,14 +1,26 @@
 @import '../../styles/variables';
 
 
-.header {
+@mixin header {
   @include innerBox(1);
   align-items: center;
   background-color: white;
+  height: 80px;
 }
 
+.header {
+  @include header;
+}
+
+.headerWhite {
+  @include header;
+  background: $black;
+
+  color: white;
+}
 .logo {
-  grid-column: 2 / 4;
+  grid-column: 2 / 5;
+
 }
 .links {
   grid-column: 8 / span 6;

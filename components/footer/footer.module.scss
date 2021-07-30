@@ -1,0 +1,57 @@
+@import '../../styles/variables.scss';
+
+.footer {
+  background: $black;
+  color: white;
+  grid-column: 2 /-2;
+  padding-bottom: 95px;
+
+  position: relative;
+  bottom: 0;
+  display: grid;
+  grid-template-rows: 130px 100px 1fr;
+  grid-template-rows: auto auto;
+  text-align: center;
+
+  .links {
+    @include innerBox(2);
+
+    padding-top: 70px;
+    padding-bottom: 30px;
+
+    img {
+      grid-column: 2 /span 3;
+    }
+
+    .routes {
+      display: grid;
+      grid-column: 5 / 11;
+      grid-template-columns: repeat(5, 1fr);
+      justify-content: space-between;
+    }
+
+    .social {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: space-between;
+      grid-column: 13 / 14;
+    }
+  }
+
+  .info {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 12px;
+    p {
+      font-size: 14px;
+    }
+
+    div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 32px;
+    }
+  }
+}

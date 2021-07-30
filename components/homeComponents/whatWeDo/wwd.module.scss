@@ -1,17 +1,29 @@
 @import '../../../styles/variables';
 
 .wwd {
+  padding: 170px 0;
   @include innerBox(3);
 }
 
 .wwdIntro {
+  display: grid;
   justify-self: center;
   text-align: center;
   grid-column: 4 / -4;
   color: white;
+  grid-gap: 32px;
 }
 
 .aiBoost {
   grid-column: 2 /-2;
-  width: 100%;
+  grid-row: 2;
+  width: 95%;
+z-index: 2;
+}
+
+.background {
+  position: absolute;
+   left: 50%;
+   transform: translate(-48%, 3%);
+   opacity: 0.5;
 }
